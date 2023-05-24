@@ -4,7 +4,7 @@ import { A } from "@solidjs/router";
 import {  createEffect } from "solid-js";
 
 import  "../../css/main.css"
-import base from "~/configs";
+import base from "../../configs"
 
 function Homepage(){
 

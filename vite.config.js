@@ -3,7 +3,7 @@ import unocss from "unocss/vite";
 import mdx from "@mdx-js/rollup";
 import rehypeHighlight from "rehype-highlight";
 import solid from "solid-start/vite";
-import base from "~/configs";
+import base from "./configs";
 export default defineConfig({
   plugins: [
     unocss(),
