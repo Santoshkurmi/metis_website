@@ -1,6 +1,6 @@
 import { createEffect, onCleanup, onMount } from "solid-js";
 
-import ContextTitles from "../ContextTitles";
+// import ContextTitles from "../ContextTitles";
 
 import {
   assign_heading_ids,
@@ -49,7 +49,7 @@ export function NewsPage(props) {
       <div id="newsContent">{props.children}</div>
 
       {/* on this page component */}
-      {contextHeadings.length > 1 && <ContextTitles />}
+      {/* {contextHeadings.length > 1 && <ContextTitles />} */}
     </div>
   );
 }

@@ -15,7 +15,7 @@ import {
   generateActiveContext,
 } from "~/utils";
 
-import ContextTitles from "~/components/ContextTitles";
+// import ContextTitles from "~/components/ContextTitles";
 
 export const [sideBarShown, showSidebar] = createSignal(false);
 
@@ -58,13 +58,13 @@ function Docs() {
         <div class="flex flex-col-reverse xl:grid xl:grid-cols-[1fr_auto]">
           <div xl:px-10>
             <div id="DocContent" w-full>
-              {/* <Outlet /> */}
+              <Outlet />
             </div>
             <NextPrevPageBtns />
           </div>
 
           {/* on this page component */}
-          {contextHeadings.length > 1 && <ContextTitles />}
+          {/* {contextHeadings.length > 1 && <ContextTitles />} */}
         </div>
       </div>
     </div>
