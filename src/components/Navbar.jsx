@@ -16,7 +16,7 @@ function Links() {
         href="/"
         class="vertCentered !gap-3 font-bold text-grey-4 dark:text-white-2"
       >
-        <img src="/logo.png" alt="nvchad logo" w="26px" h="26px" />
+        <img src={base+"/logo.png"} alt="nvchad logo" w="26px" h="26px" />
         Metis
       </A>
 
