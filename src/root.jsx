@@ -25,7 +25,7 @@ export default function Root() {
           content="Metis Linux a powerful lightweight linux distro based on arch"
         />
         {/* favicon & font */}
-        <link rel="icon" type="image/svg+xml" href="/logo.png" />
+        <link rel="icon" type="image/svg+xml" href="logo.png" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
