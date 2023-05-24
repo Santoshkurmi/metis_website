@@ -58,7 +58,7 @@ function Docs() {
         <div class="flex flex-col-reverse xl:grid xl:grid-cols-[1fr_auto]">
           <div xl:px-10>
             <div id="DocContent" w-full>
-              <Outlet />
+              {/* <Outlet /> */}
             </div>
             <NextPrevPageBtns />
           </div>
