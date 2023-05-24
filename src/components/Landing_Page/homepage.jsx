@@ -61,7 +61,7 @@ createEffect(slideshow)
       </A>
 										</ul>
 									</div>
-									<span class="image"><img height={"100%"} id="slideshow" src="slideshow/1.jpg" alt="" /></span>
+									<span class="image"><img height={"100%"} id="slideshow" src={base+"/slideshow/1.jpg"} alt="" /></span>
 								</div>
 							</section>
 
