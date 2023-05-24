@@ -36,7 +36,7 @@ createEffect(slideshow)
 			<div id="wrapper">
 
 					<header id="header" class="alt">
-						<span class="logo"><img height="100" src="/logo.png" alt="" /></span>
+						<span class="logo"><img height="170" src="/logo.gif" alt="" /></span>
 						<h1>MetisLinux</h1>
 						<p>Yet another minimal Linux distribution,<br />
 						based on <a href="https://www.archlinux.org" target="_blank">Arch Linux</a>.</p>

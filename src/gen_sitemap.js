@@ -42,7 +42,7 @@ let site_urls = "";
 
 const gen_url_tag = (link) => (
   `<url>
-     <loc>https://nvchad.com/${link}</loc>
+     <loc>https://metis-linux.org/${link}</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
    </url>

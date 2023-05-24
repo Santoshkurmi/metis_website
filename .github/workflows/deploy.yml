@@ -10,42 +10,23 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: jirutka/setup-alpine@v1
-        with:
-          branch: v3.15
+      - uses: actions/checkout@v3
 
-      - name: Checkout repo
-        uses: actions/checkout@v2
 
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: 16
+      - name: install node and npm
+        run: |
+            sudo apt update
+            sudo apt install nodejs npm
+            node --version
 
-      - name: Cache node modules
-        id: cache-nodemodules
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-node-modules
-        with:
-          # caching node_modules
-          path: node_modules
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
+      - name: start build script
+        run: |
+            npm install
+            npm run build
 
-      - name: Install Dependencies
-        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
-        run: npm ci
-      #- name: Install dependencies
-      # uses: bahmutov/npm-install@v1
 
-      - name: Build project
-        run: npm run build
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to my github page
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

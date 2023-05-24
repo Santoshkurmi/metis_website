@@ -44,11 +44,9 @@ export default function Root() {
       </Head>
       <Body>
         <Suspense>
-          <ErrorBoundary>
             <Routes>
               <FileRoutes />
             </Routes>
-          </ErrorBoundary>
         </Suspense>
         <Scripts />
       </Body>

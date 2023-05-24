@@ -132,7 +132,7 @@ function Searchbar() {
     docsearch({
       appId: "BOJS19CH35",
       apiKey: "c74ee96af1dea95b6e189501983733f8",
-      indexName: "nvchad",
+      indexName: "metis",
       container: "#docsearch",
     });
 
