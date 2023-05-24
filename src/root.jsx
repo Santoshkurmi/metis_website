@@ -10,7 +10,6 @@ import {
   Routes,
   Scripts,
   Title,
-  Base
 } from "solid-start";
 // import "./assets/css/main.css"
 
@@ -21,7 +20,6 @@ export default function Root() {
   return (
     <Html lang="en">
       <Head>
-      <Base href="/website/"/>
         <Meta
           name="description"
           content="Metis Linux a powerful lightweight linux distro based on arch"
