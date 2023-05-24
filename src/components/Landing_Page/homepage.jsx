@@ -21,7 +21,7 @@ function Homepage(){
 	}
 	
 	setInterval(()=>{
-		img.src =base+"slideshow/"+imageUrls[current];
+		img.src =base+"/slideshow/"+imageUrls[current];
 		current = (current+1) % imageUrls.length;
 	},4000)
 
@@ -37,7 +37,7 @@ createEffect(slideshow)
 			<div id="wrapper">
 
 					<header id="header" class="alt">
-						<span class="logo"><img height="170" src={base+"logo.gif"} alt="" /></span>
+						<span class="logo"><img height="170" src={base+"/logo.gif"} alt="" /></span>
 						<h1>MetisLinux</h1>
 						<p>Yet another minimal Linux distribution,<br />
 						based on <a href="https://www.archlinux.org" target="_blank">Arch Linux</a>.</p>
