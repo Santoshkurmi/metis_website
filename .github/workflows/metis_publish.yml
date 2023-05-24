@@ -26,9 +26,6 @@ jobs:
 
 
       - name: Push data to another repository
-        uses: ad-m/github-push-action@master
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          repository: santoshkurmi/website
-          branch: master
-          directory: ./dist
+          path: ./dist
