@@ -4,8 +4,7 @@ import { A } from "@solidjs/router";
 import {  createEffect } from "solid-js";
 
 import  "../../css/main.css"
-
-const base="/website/" //github repo name
+import base from "~/configs";
 
 function Homepage(){
 

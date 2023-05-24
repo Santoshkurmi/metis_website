@@ -12,7 +12,7 @@ import {
   Title,
 } from "solid-start";
 // import "./assets/css/main.css"
-import { base } from "./components/Landing_Page/homepage";
+import base from "./configs";
 import "uno.css";
 import "./css/style.css";
 
