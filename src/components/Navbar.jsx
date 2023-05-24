@@ -4,7 +4,7 @@ import { showSidebar, sideBarShown } from "~/routes/(index)/docs";
 
 import docsearch from "@docsearch/js";
 import "@docsearch/css";
-
+import base from "../configs"
 // for toggling menu links, btns on mobile
 const [linksShown, showLinks] = createSignal(false);
 
