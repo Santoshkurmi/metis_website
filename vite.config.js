@@ -21,5 +21,5 @@ export default defineConfig({
       extensions: [".mdx"],
     }),
   ],
-  base:""
+  // base:""
 });
