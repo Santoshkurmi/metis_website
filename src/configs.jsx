@@ -1,3 +1,3 @@
 
-const base = ""  //github repo name
+const base = "/"  //github repo name
 export default base
